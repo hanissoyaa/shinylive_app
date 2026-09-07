@@ -1,0 +1,87 @@
+---
+title: "README.md"
+output: html_document
+date: "2026-08-12"
+---
+```{r}
+```
+
+
+```{r}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# 📊 Interactive Statistical Analysis Dashboard - User Guide
+
+Welcome to the **Interactive Statistical Analysis Shiny Application**! [cite_start]This application allows non-technical users to upload custom datasets and perform data exploration, dynamic visualization, hypothesis testing, and regression analysis without writing any code[cite: 9].
+
+---
+
+## 🚀 Getting Started
+
+### Step 1: Data Input & Management (Module 1)
+1. [cite_start]Navigate to the **Data Input** tab[cite: 16, 17].
+2. [cite_start]Click the **Browse...** button to upload a `.csv` or `.xlsx` file[cite: 18].
+3. [cite_start]View the **Data Preview** table to confirm your dataset loaded correctly and check its dimensions (rows and columns)[cite: 19, 39].
+
+---
+
+## 📈 Exploring Your Data
+
+### Step 2: Descriptive Statistics Engine (Module 2)
+1. [cite_start]Go to the **Summary Statistics** tab[cite: 16, 20].
+2. [cite_start]**Quantitative Variables:** Select a numerical column from the dropdown menu to compute summary metrics (Mean, Median, Standard Deviation, Min, Max)[cite: 21, 42].
+3. [cite_start]**Categorical Variables:** Select a qualitative column to view category counts and frequency tables[cite: 22, 42].
+
+### Step 3: Dynamic Data Visualization (Module 3)
+1. [cite_start]Switch to the **Data Visualization** tab[cite: 16, 23].
+2. [cite_start]**Histograms & Density Plots:** Choose a numerical variable and use the interactive slider to adjust the bin width dynamically[cite: 24, 45].
+3. [cite_start]**Bar Charts & Pie Charts:** Select a categorical variable to visualize frequency distributions across categories[cite: 25, 45].
+
+---
+
+## 🔬 Inferential Analysis
+
+### Step 4: Automated Hypothesis Testing (Module 4)
+1. [cite_start]Open the **Hypothesis Testing** tab[cite: 16, 27].
+2. Select your test structure:
+   * [cite_start]**One-Sample Test** vs. **Two-Sample Test**[cite: 29].
+3. [cite_start]Choose or let the system guide your test logic (**Z-Test** vs. **T-Test**)[cite: 30, 48].
+4. [cite_start]The output will dynamically display the calculated **test statistic** and **$p$-value**[cite: 31, 48].
+
+### Step 5: Correlation & Regression Modeling (Module 5)
+1. [cite_start]Navigate to the **Regression & Correlation** tab[cite: 16, 32].
+2. [cite_start]**Correlation:** Choose two continuous variables to compute the Pearson/Spearman correlation coefficient and view a scatter plot or correlation matrix[cite: 33, 52].
+3. [cite_start]**Linear Regression:** Select a Response ($Y$) variable and an Explanatory ($X$) variable[cite: 34].
+4. View the regression coefficients, $R^2$ goodness-of-fit metric, diagnostic residual plots, and the explicitly formatted linear equation:
+   [cite_start]$$Y = \beta_0 + \beta_1 X$$ [cite: 34, 52]
+
+---
+
+## ❓ Troubleshooting & Support
+* [cite_start]**File Error:** Ensure your uploaded file is formatted correctly as a `.csv` or `.xlsx` file with headers[cite: 18, 41].
+* [cite_start]**Missing Values:** The app automatically handles missing (`NA`) values, but ensure key variables have adequate data for regression and hypothesis testing[cite: 41].
+
